@@ -4,6 +4,7 @@ import { Separator } from '../../components/Separator.jsx';
 import { SectionHeader } from './components/SectionHeader.jsx';
 import { ProductList } from './components/ProductList';
 import { CategoryList } from './components/CategoryList'; 
+import { HomeCarousel } from "./components/HomeCarousel";
 export function HomePage() {
   return (
     <>
@@ -13,13 +14,9 @@ export function HomePage() {
           {/* Conteúdo principal sem o menu lateral */}
           <div className="flex flex-col w-full h-fit-content bg-white shadow-md contrast:bg-black">
 
-            {/* Imagem do Anúncio */}
+            {/* Carrossel no topo */}
             <div className="w-full">
-              <img
-                src="/conectando.png"
-                alt="Banner com slogan Conectando Solidariedade"
-                className="object-cover w-full"
-                />
+              <HomeCarousel />
             </div>
 
             {/* Seção Recentes e Mais Buscados */}
